@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Joke app</title> 
+   <style>
+    body{ font-family: Arial; margin: 50px;}
+    ul{ list-style-type: none; padding:0;}
+    form{ margin-left: 10px;}
+    button{ magring-left:10px;}
+   </style>
+</head>
+<body>
+    <h1>Joke app</h1>
+   <ul>
+    {{ joke }}
+   </ul>
+    <form action="{{ url_for('get_joke') }}" method="get">
+        <button type="submit"> get jokes </button>
+    </form>
+</body>
+</html>
